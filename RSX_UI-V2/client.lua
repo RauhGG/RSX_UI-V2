@@ -165,7 +165,7 @@ end)
 
 RegisterCommand('tsbelt', function()
     if IsPedInAnyVehicle(PlayerPedId()) then
-        if not sbelt and not GetVehicleClass(GetVehiclePedIsIn(PlayerPedId(), false)) == 8 or GetVehicleClass(GetVehiclePedIsIn(PlayerPedId(), false)) == 13 then
+        if not sbelt  then
             sbelt = true
         else
             sbelt = false
